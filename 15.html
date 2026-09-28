@@ -11,19 +11,23 @@ button { cursor: pointer; }
 img { max-width: 100%; height: auto; }
 [hidden] { display: none !important; }
 
-</style>
+</style>s
 </head>
 <body>
-<h1>Mana spēle</h1>
-<p>Savāc piecas zvaigznes.</p>
+<h1>Vienradžu lekšana </h1>
+<p>Mērķis ir lektpāri varavīksnēm un končām un vāc zvaigznes.</p>
 <section id="sakums">
-  <h2>Sākuma ekrāns</h2>
+  <h2>sākuma ekrāns </h2>
+  <p>Nepieskaries varavīksnēm un končām.</p>
+  <p>spēle beidzās kad pieskaries varavīksnēm vai končām.</p>
+  <p>Vāc zvaigznes, lai iegūtu punktus.</p>
   <button onclick="paraditSpeli()">Sākt spēli</button>
 </section>
 <section id="laukums" hidden>
   <h2>Spēles ekrāns</h2>
-  <p>Punkti: 0</p>
-  <p>Šeit vēlāk būs spēlētājs.</p>
+  <p>Punkti: 0 </p>
+  <p>Spēlētājs ir vienradzis ar krāsainiem matiem.</p>
+  <p>Spēlē būs jaizmanto poga "atstarpe" lai vienradzis lektu</p>
   <button onclick="paraditSakumu()">Atpakaļ</button>
 </section>
 <script>
