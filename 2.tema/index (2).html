@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Delfīnu peldēšana</title>
+<style>
+/* Pamata izkārtojums — šīs rindas nemaini */
+body { font-family: Arial, sans-serif; max-width: 680px; margin: 24px auto; padding: 16px; line-height: 1.6; }
+button, input { font: inherit; padding: 10px 16px; margin: 6px 0; cursor: pointer; }
+img, audio { max-width: 100%; }
+[hidden] { display: none !important; }
+
+/* NOFORMĒ ŠEIT: pielieto 2.1. un 2.2. nodarbībā apgūto CSS */
+body {
+  background-color: #bfeffd;
+  color: #430766;
+}
+
+h1 {
+  color: #222222;
+  font-size: 36px;
+  text-align: center;
+}
+
+.noteikumi {
+  background-color: #22075341;
+  color: #eeb6f3;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.laukums {
+  width: 360px;
+  padding: 20px;
+  border: 2px solid #0b2953;
+  border-radius: 12px;
+  margin: 20px auto;
+  background-color: #f8fafc;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #072d53;
+  color: #ffffff;
+  border-radius: 8px;
+  border: 0;
+}
+</style>
+</head>
+<body>
+<h1>Delfīnu peldēšana</h1>
+<p>Mērķis ir pēldēt un lekt pāri korāļiem viņiem nepieskaroties un vākt zvaigznes.</p>
+<section class="noteikumi">
+  <h2>Noteikumi</h2>
+  <p>Spēlētājs var vākt punktus krājot zvaigznes.</p>
+  <p>Skaņa spēlēs kad spēlētājs svāks zvaigzni.</p>
+  <p>Spēlētājs spēlē ar bultiņām uz klaviatūras.</p>
+</section>
+<div class="laukums">
+  <h2>Spēles laukums</h2>
+  <img src="attels/Untitled.png" alt="Zils delfīns" width="128">
+  <p>Skaņas efekta nozīme spēlē:</p>
+  <audio controls src="klikskis.wav"></audio>
+  <p id="punkti">Punkti: 0</p>
+  <button onclick="savakt()">Savākt punktu</button>
+</div>
+<script>
+// Gatava punktu poga — šo skriptu nemaini.
+let punkti = 0;
+function savakt() {
+  punkti = punkti + 1;
+  document.getElementById("punkti").textContent = "Punkti: " + punkti;
+}
+</script>
+</body>
+</html>
